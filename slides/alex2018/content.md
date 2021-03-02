@@ -1,5 +1,5 @@
 
-## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
+## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and 1Semantics
 
 ### CVPR 2018
 
