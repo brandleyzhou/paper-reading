@@ -29,6 +29,7 @@ semantics of the scene at the same time.
 - Combining all tasks into a single model reduces computation and allows these systems to run in real-time.
 
 --
+
 #### However
 
 - Performance is highly dependent on an appropriate choice of weighting between each task’s loss
@@ -36,6 +37,7 @@ semantics of the scene at the same time.
 - Tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice.
 
 ---
+
 ## Research Goals
 
 A model trained under multi-task learning can outperform separate models trained individually on each task:
@@ -45,6 +47,7 @@ A model trained under multi-task learning can outperform separate models trained
 * Depth Estimation
 
 ---
+
 ## Contributions
 
 --
@@ -56,6 +59,7 @@ A model trained under multi-task learning can outperform separate models trained
 * Demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.
 
 ---
+
 ## Related Work 
 
 ---
@@ -63,31 +67,39 @@ A model trained under multi-task learning can outperform separate models trained
 ![overview](assets/network.png)<!-- .element height="70%" width="70%" -->
 
 ---
+
 ## Method
 
 ---
+
 ### Multi Task Learning with Homoscedastic Uncertainty
 
 --
+
 #### Homoscedastic uncertainty
 
 --
+
 #### Mtli-task likehoods 
 
 ---
+
 ## Scene Understanding Model
 
 ---
+
 ## Experiments
 
 --
+
 #### Data
 
 ---
 
 ## Conclusions
 
---
+---
+
 ### Qualitative Results
 
 ![results](assets/results.png)<!-- .element height="70%" width="70%" -->
