@@ -1,7 +1,7 @@
 
 ## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
 
-### CVPR 2019
+### CVPR 2018
 
 ---
 
@@ -22,9 +22,9 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 
 ---
 
-## Research Goal
+## Research Objective
 
-Learn a 3D reconstruction of an object from single-view images without supervision
+
 
 ---
 
