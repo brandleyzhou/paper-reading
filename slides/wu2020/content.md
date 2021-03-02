@@ -73,7 +73,7 @@ Train a model $\Phi$ to decompose an input image I into depth, albedo, viewpoint
 
 ---
 
-![overview](assets/overview.png)
+![overview](assets/network.png)<!-- .element height="70%" width="70%" -->
 
 
 ---
@@ -128,7 +128,7 @@ $\mathbf{I} \approx \hat{\mathbf{I}}'$
 
 ## Loss Function
 
-![overview](assets/loss.png)
+![overview](assets/comparison.png)<!-- .element height="70%" width="70%" -->
 
 The same loss is calculated for the symmetric reconstruction, $\mathcal{L}(\hat{\mathbf{I}}', \mathbf{I}, \sigma')$.
 
