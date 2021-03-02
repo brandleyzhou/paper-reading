@@ -1,5 +1,5 @@
 
-## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and 1Semantics
+## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
 
 ### CVPR 2018
 
@@ -19,15 +19,23 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 
 [Alex Kendall's Homepage](https://alexgkendall.com/research/)
 
-
 ---
 
-## Research Objective
+##  Objective
 
 
+
+---
+## Contribution
 
 --
 
+* a novel and principled multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using homoscedastic task uncertainty,
+* a unified architecture for semantic segmentation, instance segmentation and depth regression,
+
+* demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.
+
+---
 #### Prior Work  
 
 - Structure from motion (SfM)
