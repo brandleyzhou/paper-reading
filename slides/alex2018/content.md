@@ -40,8 +40,9 @@ semantics of the scene at the same time.
 
 ## Research Goals
 
-- A model trained under multi-task learning can outperform separate models trained individually on each task:
+--
 
+- A model trained under multi-task learning can outperform separate models trained individually on each task:
   * Sematic Segmentation
   * Instance Segmentation
   * Depth Estimation
@@ -60,11 +61,13 @@ semantics of the scene at the same time.
 
 ---
 
-## Related Work 
+### Model Overview
+
+![overview](assets/network.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
-![overview](assets/network.png)<!-- .element height="70%" width="70%" -->
+## Related Work 
 
 ---
 
@@ -98,7 +101,7 @@ semantics of the scene at the same time.
 
 ## Conclusions
 
----
+--
 
 ### Qualitative Results
 
