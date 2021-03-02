@@ -1,4 +1,3 @@
 # Paper reading group - slides
  
-[slides](https://brandleyzhou.github.io/paper-reading/slides/alex2018/)
-[slides](https://brandleyzhou.github.io/paper-reading/slides/wu2020/)
+* [Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics ](https://brandleyzhou.github.io/paper-reading/slides/alex2018/)
