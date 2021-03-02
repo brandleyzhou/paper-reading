@@ -42,9 +42,9 @@ semantics of the scene at the same time.
 
 - A model trained under multi-task learning can outperform separate models trained individually on each task:
 
-* Sematic Segmentation
-* Instance Segmentation
-* Depth Estimation
+  * Sematic Segmentation
+  * Instance Segmentation
+  * Depth Estimation
 
 ---
 
