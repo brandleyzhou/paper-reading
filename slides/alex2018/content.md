@@ -23,18 +23,17 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 
 ##  Objective
 
-
-
 ---
 
 ## Contributions
 
 --
 
-* a novel and principled multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using **homoscedastic** task uncertainty
-* a unified architecture for semantic segmentation, instance segmentation and depth regression
+* A novel and principled multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using *homoscedastic* task uncertainty
 
-* demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.
+* A unified architecture for semantic segmentation, instance segmentation and depth regression
+
+* Demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.
 
 ---
 
@@ -51,14 +50,16 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 ---
 
 ### Multi Task Learning with Homoscedastic Uncertainty
+
+-- 
+
 #### Homoscedastic uncertainty
 
 --
 
 #### Mtli-task likehoods 
 
-
---
+---
 
 ## Scene Understanding Model
 
