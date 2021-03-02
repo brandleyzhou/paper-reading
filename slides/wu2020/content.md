@@ -1,23 +1,23 @@
 
-## Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild
+## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
 
-### CVPR 2020
-### Best Paper Award
+### CVPR 2018
 
 ---
 
-Shangzhe Wu, Christian Rupprecht and Andrea Vedaldi
+Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 
-Visual Geometry Group, University of Oxford
+<sup>1</sup> University of Cambridge, <sup>2</sup> University of Oxford
 
 ---
 
 ## Resources
 
-[paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_Unsupervised_Learning_of_Probably_Symmetric_Deformable_3D_Objects_From_Images_CVPR_2020_paper.pdf)
+[Paper](https://arxiv.org/pdf/1705.07115.pdf)
 
-[project page](https://elliottwu.com/projects/unsup3d/)
+[Code](https://github.com/yaringal/multi-task-learning-example)
 
+[Alex Kendall's Homepage](https://alexgkendall.com/research/)
 
 
 ---
