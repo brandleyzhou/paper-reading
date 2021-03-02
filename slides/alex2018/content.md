@@ -36,6 +36,7 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 * demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.
 
 ---
+
 #### Prior Work  
 
 - Structure from motion (SfM)
@@ -45,7 +46,6 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 - Category-specific reconstruction
   - Priors from data (eg. SMPL for human bodies)
   - Difficult to obtain for all categories (eg. cats)
-
 
 ---
 
