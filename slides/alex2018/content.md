@@ -38,20 +38,7 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 
 ---
 
-#### Related Work  
-
-- Structure from motion (SfM)
-  - Traditionally requires multiple views of a rigid object
-  - Non-rigid SfM requires 2D landmarks 
-- Shape from shading/symmetry
-- Category-specific reconstruction
-  - Priors from data (eg. SMPL for human bodies)
-  - Difficult to obtain for all categories (eg. cats)
-
----
-
-## Key Idea
-
+#### Related Work 
 
 ---
 
