@@ -40,7 +40,7 @@ semantics of the scene at the same time.
 
 ## Research Goals
 
-A model trained under multi-task learning can outperform separate models trained individually on each task:
+- A model trained under multi-task learning can outperform separate models trained individually on each task:
 
 * Sematic Segmentation
 * Instance Segmentation
@@ -72,7 +72,7 @@ A model trained under multi-task learning can outperform separate models trained
 
 ---
 
-### Multi Task Learning with Homoscedastic Uncertainty
+#### Multi Task Learning with Homoscedastic Uncertainty
 
 --
 
@@ -80,7 +80,7 @@ A model trained under multi-task learning can outperform separate models trained
 
 --
 
-#### Mtli-task likehoods 
+#### Multi-task likehoods 
 
 ---
 
