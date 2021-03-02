@@ -1,7 +1,7 @@
 
 ## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
 
-#### CVPR 2018
+### CVPR 2018
 
 ---
 
@@ -19,27 +19,24 @@ Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
 
 [Alex Kendall's Homepage](https://alexgkendall.com/research/)
 
----
-
-## Research Motivation
-
-Performance of multi-task system is strongly dependent on the relative weighting between each task’s loss, tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice.
 
 ---
 
-## Research Object
+## Research Objective
 
-Deep learning applications benefit from multi-task learning with multiple regression and classification objectives, a principled approach to multi-task deep learning which weighs multiple loss functions is presented.
 
----
 
-## Contributions  
+--
 
-- A novel and principled multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using homoscedastic task uncertainty,
+#### Prior Work  
 
-- A unified architecture for semantic segmentation, instance segmentation and depth regression,
-
-- Demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.
+- Structure from motion (SfM)
+  - Traditionally requires multiple views of a rigid object
+  - Non-rigid SfM requires 2D landmarks 
+- Shape from shading/symmetry
+- Category-specific reconstruction
+  - Priors from data (eg. SMPL for human bodies)
+  - Difficult to obtain for all categories (eg. cats)
 
 
 ---
@@ -71,13 +68,12 @@ Motivation: With a fully symmetric object, the image could be mirrored and stere
 
 ## Method
 
+---
 Train a model $\Phi$ to decompose an input image I into depth, albedo, viewpoint and lighting, together with a pair of confidence maps.
 
 ---
 
-##  Network
-
-![overview0](assets/network.png)
+![overview](assets/network.png)<!-- .element height="70%" width="70%" -->
 
 
 ---
@@ -132,7 +128,7 @@ $\mathbf{I} \approx \hat{\mathbf{I}}'$
 
 ## Loss Function
 
-![overview0](alex2018.assets/loss.png)
+![overview](assets/comparison.png)<!-- .element height="70%" width="70%" -->
 
 The same loss is calculated for the symmetric reconstruction, $\mathcal{L}(\hat{\mathbf{I}}', \mathbf{I}, \sigma')$.
 
@@ -188,7 +184,7 @@ Nothing unusual.
 
 #### Results
 
-![results](assets/results.png)
+![results](assets/results.png)<!-- .element height="50%" width="50%" -->
 
 SIDE: Scale-invariant depth error
 
