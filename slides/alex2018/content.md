@@ -79,8 +79,6 @@ semantics of the scene at the same time.
 
 - Use homoscedastic uncertainty to weight the losses in multi-task learning models
 
-- Since homoscedastic uncertainty does not vary with input data, they interpret it as task uncertainty. 
-
 ---
 
 #### Multi Task Learning with Homoscedastic Uncertainty
@@ -92,9 +90,44 @@ semantics of the scene at the same time.
 
 #### Homoscedastic uncertainty
 
---
+- In Bayesian modelling
+  * *Epistemic Uncertainty*
+  * Aleatoric Uncertainty
+    * Data-dependent or  Heteroscedastic uncertainty
+    * <mark>Task-dependent or Homoscedastic uncertainty </mark> 
+
+---
+
+- In a multi-task setting, the task uncertainty captures the relative confidence between tasks, reflecting the uncertainty inherent to the regression or classification task. 
+
+---
 
 #### Multi-task likehoods 
+
+- Let fW(x) be the output of a neural network
+
+![overview](assets/eq2.png)<!-- .element height="5%" width="5%" -->
+
+![overview](assets/eq3.png)<!-- .element height="5%" width=5%" -->
+
+![overview](assets/eq4.png)<!-- .element height="5%" width=5%" -->
+
+![overview](assets/eq5.png)<!-- .element height="5%" width=5%" -->
+
+![overview](assets/eq6.png)<!-- .element height="5%" width=5%" -->
+
+![overview](assets/eq7.png)<!-- .element height="5%" width=5%" -->
+
+![overview](assets/eq8.png)<!-- .element height="5%" width=5%" -->
+
+![overview](assets/eq9.png)<!-- .element height="5%" width=5%" -->
+
+![overview](assets/eq10.png)<!-- .element height="5%" width=5%" -->
+
+---
+
+#### Loss function
+
 
 ---
 
@@ -108,25 +141,25 @@ semantics of the scene at the same time.
 
 #### Dataset
 
-- CItyScpaes
+- CItyScapes
 
 ---
 
-### Quantatiive Comparison
+### Quantitive Comparison
 
-![results](assets/comparison.png)<!-- .element height="70%" width="70%" -->
+![results](assets/comparison.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
 ### Ablation experiments
 
-![results](assets/comparison_1.png)<!-- .element height="50%" width="50%" -->
+![results](assets/comparison_1.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
 ### Qualitative Results
 
-![results](assets/results.png)<!-- .element height="70%" width="70%" -->
+![results](assets/results.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
