@@ -30,11 +30,13 @@ semantics of the scene at the same time.
 
 --
 
-#### However
+- However:
 
-- Performance is highly dependent on an appropriate choice of weighting between each task’s loss
+  * Performance is highly dependent on an appropriate choice of weighting between each task’s loss
 
-- Tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice.
+  * Tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice.
+  
+  * The optimal weighting of each task is dependent on the measurement scale (e.g. meters, centimetres or millimetres) and ultimately the magnitude of the task’s noise.
 
 ---
 
@@ -67,15 +69,24 @@ semantics of the scene at the same time.
 
 ---
 
-## Related Work 
+## Related Work
+
+![overview](assets/ablation.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
-## Method
+## IDEAS
+
+- Use homoscedastic uncertainty to weight the losses in multi-task learning models
+
+- Since homoscedastic uncertainty does not vary with input data, they interpret it as task uncertainty. 
 
 ---
 
 #### Multi Task Learning with Homoscedastic Uncertainty
+
+- Homoscedastic uncertainty
+- Multi-task likehoods
 
 --
 
@@ -96,10 +107,23 @@ semantics of the scene at the same time.
 --
 
 #### Data
+- CItyscpaes
 
 ---
 
-## Conclusions
+## Experiments
+
+--
+
+### Quantatiive Comparison
+
+![results](assets/comparison.png)<!-- .element height="70%" width="70%" -->
+
+--
+
+### Ablation experiments
+
+![results](assets/comparison_1.png)<!-- .element height="70%" width="70%" -->
 
 --
 
