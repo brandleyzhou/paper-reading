@@ -106,26 +106,23 @@ semantics of the scene at the same time.
 
 --
 
-#### Data
-- CItyscpaes
+#### Dataset
+
+- CItyScpaes
 
 ---
-
-## Experiments
-
---
 
 ### Quantatiive Comparison
 
 ![results](assets/comparison.png)<!-- .element height="70%" width="70%" -->
 
---
+---
 
 ### Ablation experiments
 
-![results](assets/comparison_1.png)<!-- .element height="70%" width="70%" -->
+![results](assets/comparison_1.png)<!-- .element height="50%" width="50%" -->
 
---
+---
 
 ### Qualitative Results
 
