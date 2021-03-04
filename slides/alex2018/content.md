@@ -1,5 +1,5 @@
 
-## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
+## 4Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
 
 #### CVPR 2018
 
@@ -126,8 +126,8 @@ semantics of the scene at the same time.
   - for multi-output:  
 ![overview](assets/eq6.png)<!-- .element height="10%" width="60%" -->
 
-  - 3Leading to the *minimisation* objective:  
-![overview](assets/eq7.png)<!-- .element height="1%" width="80%" -->
+  - Leading to the *minimisation* objective:  
+![overview](assets/eq7.png)<!-- .element height="1%" width="60%" -->
 
 ---
 
