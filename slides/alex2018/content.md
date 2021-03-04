@@ -187,5 +187,12 @@ semantics of the scene at the same time.
 
 ---
 
+### Robustness Test
+
+![results](assets/robustness.png)<!-- .element height="90%" width="90%" -->
+
+---
+
 # Thank you! 
+
 ## Questions?
