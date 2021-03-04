@@ -65,7 +65,7 @@ semantics of the scene at the same time.
 
 ### Model Overview
 
-![overview](assets/network.png)<!-- .element height="80%" width="80%" -->
+![overview](assets/network.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
@@ -108,48 +108,48 @@ semantics of the scene at the same time.
 
 - Definations:
   - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ
-![overview](assets/eq2.png)<!-- .element height="5%" width="5%" -->
+![overview](assets/eq2.png)<!-- .element height="25%" width="25%" -->
 
   - For classification:
-![overview](assets/eq3.png)<!-- .element height="5%" width="5%" -->
+![overview](assets/eq3.png)<!-- .element height="25%" width="25%" -->
 
   - Multi-task likehood:
-![overview](assets/eq4.png)<!-- .element height="5%" width="5%" -->
+![overview](assets/eq4.png)<!-- .element height="25%" width="25%" -->
 
 ---
 
 - Regression tasks' maximum likelihood inference
 
   - for Eq2, its written as
-![overview](assets/eq5.png)<!-- .element height="5%" width="5%" -->
+![overview](assets/eq5.png)<!-- .element height="25%" width="25%" -->
 
   - for multi-output:
-![overview](assets/eq6.png)<!-- .element height="5%" width="5%" -->
+![overview](assets/eq6.png)<!-- .element height="25%" width="25%" -->
 
   - Leading to the *minimisation* objective:
-![overview](assets/eq7.png)<!-- .element height="5%" width="5%" -->
+![overview](assets/eq7.png)<!-- .element height="25%" width="25%" -->
 
 ---
 
 - Classification tasks' maximum likelihood inference
   - with a positive scalar σ. (Boltzmann distribution)
-![overview](assets/eq8.png)<!-- .element height="5%" width="5%" -->
+![overview](assets/eq8.png)<!-- .element height="25%" width="25%" -->
 
   - log likelihood  
-![overview](assets/eq9.png)<!-- .element height="2.5%" width="5%" -->
+![overview](assets/eq9.png)<!-- .element height="25%" width="225%" -->
 
 ---
 
 #### Loss function
 - For a continuous output y1 and a discrete output y2, modelled with a Gaussian likelihood and a softmax likelihood
 
-![overview](assets/eq10.png)<!-- .element height="10%" width=10%" -->
+![overview](assets/eq10.png)<!-- .element height="8%" width=10%" -->
 
 ---
 
 ## Scene Understanding Model
 
-![overview](assets/instance_seg.png)<!-- .element height="100%" width=100%" -->
+![overview](assets/instance_seg.png)<!-- .element height="80%" width=100%" -->
 
 ---
 
@@ -178,6 +178,7 @@ semantics of the scene at the same time.
 ### Qualitative Results
 
 --
+
 ![overview](assets/occlusion.png)<!-- .element height="80%" width="80%" -->
 
 ---
