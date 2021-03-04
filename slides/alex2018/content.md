@@ -108,13 +108,13 @@ semantics of the scene at the same time.
 
 - Definations:
   - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ
-![overview](assets/eq2.png)<!-- .element height="25%" width="25%" -->
+![overview](assets/eq2.png)<!-- .element height="40%" width="40%" -->
 
   - For classification:
-![overview](assets/eq3.png)<!-- .element height="25%" width="25%" -->
+![overview](assets/eq3.png)<!-- .element height="50%" width="50%" -->
 
   - Multi-task likehood:
-![overview](assets/eq4.png)<!-- .element height="25%" width="25%" -->
+![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
