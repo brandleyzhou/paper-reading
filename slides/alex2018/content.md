@@ -75,16 +75,16 @@ semantics of the scene at the same time.
 
 ---
 
-## IDEAS
+## IDEA
 
-- Use homoscedastic uncertainty to weight the losses in multi-task learning models
+- Use homoscedastic uncertainty to weight the losses in a multi-task learning model
 
 ---
 
 #### Multi Task Learning with Homoscedastic Uncertainty
 
 - Homoscedastic uncertainty
-- Multi-task likehoods
+- Multi-task likelihoods
 
 ---
 
@@ -102,18 +102,18 @@ semantics of the scene at the same time.
 
 ---
 
-#### Multi-task likehoods 
+#### Multi-task likelihoods 
 
 --
 
-- Definations:
+- Definitions:
   - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ:  
 ![overview](assets/eq2.png)<!-- .element height="65%" width="60%" -->
 
   - For classification:  
 ![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
 
-  - Multi-task likehood:  
+  - Multi-task likelihood:  
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
 
 ---
