@@ -142,7 +142,7 @@ semantics of the scene at the same time.
 ---
 
 #### Loss function
-- ![overview](assets/eq10.png)<!-- .element height="80%" width="80%" -->
+- ![overview](assets/eq10.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
