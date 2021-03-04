@@ -108,10 +108,10 @@ semantics of the scene at the same time.
 
 - Definations:
   - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ:  
-![overview](assets/eq2.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq2.png)<!-- .element height="70%" width="60%" -->
 
   - For classification:  
-![overview](assets/eq3.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
 
   - Multi-task likehood:  
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
@@ -124,17 +124,17 @@ semantics of the scene at the same time.
 ![overview](assets/eq5.png)<!-- .element height="60%" width="60%" -->
 
   - for multi-output:  
-![overview](assets/eq6.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq6.png)<!-- .element height="70%" width="60%" -->
 
   - Leading to the *minimisation* objective:  
-![overview](assets/eq7.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq7.png)<!-- .element height="60%" width="80%" -->
 
 ---
 
 - Classification tasks' maximum likelihood inference
 
   - with a positive scalar σ. (Boltzmann distribution)  
-![overview](assets/eq8.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq8.png)<!-- .element height="70%" width="60%" -->
 
   - log likelihood  
 ![overview](assets/eq9.png)<!-- .element height="25%" width="225%" -->
@@ -143,7 +143,7 @@ semantics of the scene at the same time.
 
 #### Loss function
 - For a continuous output y1 and a discrete output y2, modelled with a Gaussian likelihood and a softmax likelihood  
-![overview](assets/eq10.png)<!-- .element height="80%" width="100%" -->
+![overview](assets/eq10.png)<!-- .element height="10%" width="100%" -->
 
 ---
 
