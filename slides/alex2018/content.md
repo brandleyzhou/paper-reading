@@ -124,7 +124,7 @@ semantics of the scene at the same time.
 ![overview](assets/eq5.png)<!-- .element height="60%" width="60%" -->
 
   - for multi-output:  
-![overview](assets/eq6.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq6.png)<!-- .element height="50%" width="60%" -->
 
   - Leading to the *minimisation* objective:  
 ![overview](assets/eq7.png)<!-- .element height="50%" width="80%" -->
