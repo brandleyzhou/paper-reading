@@ -42,7 +42,7 @@ semantics of the scene at the same time.
 
 ## Research Goals
 
---
+---
 
 - A model trained under multi-task learning can outperform separate models trained individually on each task:
   * Sematic Segmentation
@@ -53,9 +53,9 @@ semantics of the scene at the same time.
 
 ## Contributions
 
---
+---
 
-* A novel and principled multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using *homoscedastic* task uncertainty
+* A  multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using *homoscedastic* task uncertainty
 
 * A unified architecture for semantic segmentation, instance segmentation and depth regression
 
@@ -86,7 +86,7 @@ semantics of the scene at the same time.
 - Homoscedastic uncertainty
 - Multi-task likehoods
 
---
+---
 
 #### Homoscedastic uncertainty
 
@@ -107,32 +107,33 @@ semantics of the scene at the same time.
 --
 
 - Definations:
-  - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ
-![overview](assets/eq2.png)<!-- .element height="60%" width="40%" -->
+  - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ:  
+![overview](assets/eq2.png)<!-- .element height="60%" width="60%" -->
 
-  - For classification:
-![overview](assets/eq3.png)<!-- .element height="60%" width="50%" -->
+  - For classification:  
+![overview](assets/eq3.png)<!-- .element height="60%" width="60%" -->
 
-  - Multi-task likehood:
+  - Multi-task likehood:  
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
 - Regression tasks' maximum likelihood inference
 
-  - for Eq2, its written as
+  - for Eq2, its written as  
 ![overview](assets/eq5.png)<!-- .element height="60%" width="60%" -->
 
-  - for multi-output:
+  - for multi-output:  
 ![overview](assets/eq6.png)<!-- .element height="60%" width="60%" -->
 
-  - Leading to the *minimisation* objective:
+  - Leading to the *minimisation* objective:  
 ![overview](assets/eq7.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
 - Classification tasks' maximum likelihood inference
-  - with a positive scalar σ. (Boltzmann distribution)
+
+  - with a positive scalar σ. (Boltzmann distribution)  
 ![overview](assets/eq8.png)<!-- .element height="60%" width="60%" -->
 
   - log likelihood  
@@ -141,15 +142,14 @@ semantics of the scene at the same time.
 ---
 
 #### Loss function
-- For a continuous output y1 and a discrete output y2, modelled with a Gaussian likelihood and a softmax likelihood
-
+- For a continuous output y1 and a discrete output y2, modelled with a Gaussian likelihood and a softmax likelihood  
 ![overview](assets/eq10.png)<!-- .element height="80%" width="100%" -->
 
 ---
 
 ## Scene Understanding Model
 
-![overview](assets/instance_seg.png)<!-- .element height="80%" width=100%" -->
+![overview](assets/instance_seg.png)<!-- .element height="50%" width="100%" -->
 
 ---
 
