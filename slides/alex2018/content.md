@@ -1,5 +1,5 @@
 
-## 4Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
+## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
 
 #### CVPR 2018
 
@@ -121,13 +121,18 @@ semantics of the scene at the same time.
 - Regression tasks' maximum likelihood inference
 
   - for Eq2, its written as  
-![overview](assets/eq5.png)<!-- .element height="10%" width="60%" -->
-
+  ![overview](assets/eq5.png)<!-- .element height="10%" width="60%" -->
   - for multi-output:  
-![overview](assets/eq6.png)<!-- .element height="10%" width="60%" -->
+  ![overview](assets/eq6.png)<!-- .element height="10%" width="60%" -->
+
+  
+
+  --
+
+  
 
   - Leading to the *minimisation* objective:  
-![overview](assets/eq7.png)<!-- .element height="1%" width="60%" -->
+  ![overview](assets/eq7.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
