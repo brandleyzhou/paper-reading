@@ -108,7 +108,7 @@ semantics of the scene at the same time.
 
 - Definations:
   - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ:  
-![overview](assets/eq2.png)<!-- .element height="70%" width="60%" -->
+![overview](assets/eq2.png)<!-- .element height="65%" width="60%" -->
 
   - For classification:  
 ![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
@@ -124,7 +124,7 @@ semantics of the scene at the same time.
 ![overview](assets/eq5.png)<!-- .element height="60%" width="60%" -->
 
   - for multi-output:  
-![overview](assets/eq6.png)<!-- .element height="70%" width="60%" -->
+![overview](assets/eq6.png)<!-- .element height="65%" width="60%" -->
 
   - Leading to the *minimisation* objective:  
 ![overview](assets/eq7.png)<!-- .element height="60%" width="80%" -->
@@ -143,13 +143,13 @@ semantics of the scene at the same time.
 
 #### Loss function
 - For a continuous output y1 and a discrete output y2, modelled with a Gaussian likelihood and a softmax likelihood  
-![overview](assets/eq10.png)<!-- .element height="10%" width="100%" -->
+![overview](assets/eq10.png)<!-- .element height="1%" width="10%" -->
 
 ---
 
 ## Scene Understanding Model
 
-![overview](assets/instance_seg.png)<!-- .element height="50%" width="100%" -->
+![overview](assets/instance_seg.png)<!-- .element height="10%" width="100%" -->
 
 ---
 
