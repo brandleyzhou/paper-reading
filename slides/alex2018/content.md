@@ -111,39 +111,39 @@ semantics of the scene at the same time.
 ![overview](assets/eq2.png)<!-- .element height="5%" width="5%" -->
 
   - For classification:
-![overview](assets/eq3.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq3.png)<!-- .element height="5%" width="5%" -->
 
   - Multi-task likehood:
-![overview](assets/eq4.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq4.png)<!-- .element height="5%" width="5%" -->
 
 ---
 
 - Regression tasks' maximum likelihood inference
 
   - for Eq2, its written as
-![overview](assets/eq5.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq5.png)<!-- .element height="5%" width="5%" -->
 
   - for multi-output:
-![overview](assets/eq6.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq6.png)<!-- .element height="5%" width="5%" -->
 
   - Leading to the *minimisation* objective:
-![overview](assets/eq7.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq7.png)<!-- .element height="5%" width="5%" -->
 
 ---
 
 - Classification tasks' maximum likelihood inference
   - with a positive scalar σ. (Boltzmann distribution)
-![overview](assets/eq8.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq8.png)<!-- .element height="5%" width="5%" -->
 
   - log likelihood  
-![overview](assets/eq9.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq9.png)<!-- .element height="2.5%" width="5%" -->
 
 ---
 
 #### Loss function
 - For a continuous output y1 and a discrete output y2, modelled with a Gaussian likelihood and a softmax likelihood
 
-![overview](assets/eq10.png)<!-- .element height="5%" width=5%" -->
+![overview](assets/eq10.png)<!-- .element height="10%" width=10%" -->
 
 ---
 
@@ -165,24 +165,24 @@ semantics of the scene at the same time.
 
 ### Quantitive Comparison
 
-![results](assets/comparison.png)<!-- .element height="80%" width="80%" -->
+![results](assets/comparison.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
 ### Ablation experiments
 
-![results](assets/comparison_1.png)<!-- .element height="80%" width="80%" -->
+![results](assets/comparison_1.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
 ### Qualitative Results
 
 --
-![overview](assets/occlusion.png)<!-- .element height="100%" width=100%" -->
+![overview](assets/occlusion.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
-![results](assets/results.png)<!-- .element height="80%" width="80%" -->
+![results](assets/results.png)<!-- .element height="90%" width="90%" -->
 
 ---
 
