@@ -121,12 +121,12 @@ semantics of the scene at the same time.
 - Regression tasks' maximum likelihood inference
 
   - for Eq2, its written as  
-![overview](assets/eq5.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq5.png)<!-- .element height="10%" width="60%" -->
 
   - for multi-output:  
-![overview](assets/eq6.png)<!-- .element height="80%" width="60%" -->
+![overview](assets/eq6.png)<!-- .element height="10%" width="60%" -->
 
-  - 2Leading to the *minimisation* objective:  
+  - 3Leading to the *minimisation* objective:  
 ![overview](assets/eq7.png)<!-- .element height="100%" width="80%" -->
 
 ---
