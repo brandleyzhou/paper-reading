@@ -127,7 +127,7 @@ semantics of the scene at the same time.
 ![overview](assets/eq6.png)<!-- .element height="10%" width="60%" -->
 
   - 3Leading to the *minimisation* objective:  
-![overview](assets/eq7.png)<!-- .element height="100%" width="80%" -->
+![overview](assets/eq7.png)<!-- .element height="1%" width="80%" -->
 
 ---
 
