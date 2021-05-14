@@ -5,19 +5,19 @@
 
 ---
 
-Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3</sup>, Gabriel Brostow<sup>1,4<sup> Michael Firman<sup>1</sup>
+Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3</sup>, Gabriel Brostow<sup>1,4</sup>, Michael Firman<sup>1</sup>
 
-<sup>1</sup> Niantic, <sup>2</sup> University of Edinburgh,<sup>3</sup> University of Oxford,<sup>4</sup> UCL
+<sup>1</sup> Niantic, <sup>2</sup> University of Edinburgh,
+<sup>3</sup> University of Oxford,<sup>4</sup> UCL
 
 ---
 
 ## Resources
 
-[Paper](https://arxiv.org/pdf/1705.07115.pdf)
+[Paper](https://arxiv.org/pdf/2104.14540.pdf)
 
-[Code](https://github.com/yaringal/multi-task-learning-example)
+[Code](https://github.com/nianticlabs/manydepth)
 
-[Alex Kendall's Homepage](https://alexgkendall.com/research/)
 
 ---
 
