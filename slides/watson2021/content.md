@@ -1,13 +1,13 @@
 
-## Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics
+## The Temporal Opportunist: Self-Supervised Multi-Frame Monocular Depth
 
-#### CVPR 2018
+#### CVPR 2021
 
 ---
 
-Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup>
+Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3</sup>, Gabriel Brostow<sup>1,4<sup> Michael Firman<sup>1</sup>
 
-<sup>1</sup> University of Cambridge, <sup>2</sup> University of Oxford
+<sup>1</sup> Niantic, <sup>2</sup> University of Edinburgh,<sup>3</sup> University of Oxford,<sup>4</sup> UCL
 
 ---
 
