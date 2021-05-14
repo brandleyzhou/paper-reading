@@ -24,8 +24,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ##  Motivation
 
-- Scene understanding algorithms must understand both the geometry and
-semantics of the scene at the same time.
+- Depth Estimation
 
 - Combining all tasks into a single model reduces computation and allows these systems to run in real-time.
 
