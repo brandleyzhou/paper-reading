@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>alex2018</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="multi-task-learning-using-uncertainty-to-weigh-losses-for-scene-geometry-and-semantics" class="slide level2">
+<h2>Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics</h2>
+<h4 id="cvpr-2018">CVPR 2018</h4>
+</section>
+<section class="slide level2">
+
+<p>Alex Kendall<sup>1</sup>, Yarin Gal<sup>2</sup>, Roberto Cipolla<sup>1</sup></p>
+<p><sup>1</sup> University of Cambridge, <sup>2</sup> University of Oxford</p>
+</section>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
+<p><a href="https://arxiv.org/pdf/1705.07115.pdf">Paper</a></p>
+<p><a href="https://github.com/yaringal/multi-task-learning-example">Code</a></p>
+<p><a href="https://alexgkendall.com/research/">Alex Kendall’s Homepage</a></p>
+</section>
+<section id="research-motivation" class="slide level2">
+<h2>Research Motivation</h2>
+<p>Performance of multi-task system is strongly dependent on the relative weighting between each task’s loss, tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice.</p>
+</section>
+<section id="research-object" class="slide level2">
+<h2>Research Object</h2>
+<p>Deep learning applications benefit from multi-task learning with multiple regression and classification objectives, a principled approach to multi-task deep learning which weighs multiple loss functions is presented.</p>
+</section>
+<section id="contributions" class="slide level2">
+<h2>Contributions</h2>
+<ul>
+<li><p>A novel and principled multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using homoscedastic task uncertainty,</p></li>
+<li><p>A unified architecture for semantic segmentation, instance segmentation and depth regression,</p></li>
+<li><p>Demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.</p></li>
+</ul>
+</section>
+<section id="key-idea" class="slide level2">
+<h2>Key Idea</h2>
+<p>Assume that the object is symmetric.</p>
+<p>Motivation: With a fully symmetric object, the image could be mirrored and stereo reconstruction techniques could be used.</p>
+</section>
+<section class="slide level2">
+
+<h4 id="but-they-are-not-symmetric">But they are not symmetric</h4>
+<ul>
+<li>Shape
+<ul>
+<li>Hair styles, expression</li>
+</ul></li>
+<li>Appearance
+<ul>
+<li>Albedo (eg. asymmetric texture of cat faces, freckles)</li>
+<li>Illumination</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h4 id="this-is-addressed">This is addressed</h4>
+<ul>
+<li>Illumination is explicitly modelled</li>
+<li>The model predicts, along with other factors, the probability that each pixel has a symmetric counterpart in the image</li>
+</ul>
+</section>
+<section id="method" class="slide level2">
+<h2>Method</h2>
+<p>Train a model <span class="math inline"><em>Φ</em></span> to decompose an input image I into depth, albedo, viewpoint and lighting, together with a pair of confidence maps.</p>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="assets/overview.png" alt="overview" /><figcaption aria-hidden="true">overview</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<p>In more detail:</p>
+<p>An RGB image <strong>I</strong> is roughly centered on the object of interest.</p>
+<p>The function, <span class="math inline"><em>Φ</em></span>, maps <strong>I</strong> to four factors <span class="math inline">(<em>d</em>, <em>a</em>, <em>w</em>, <em>l</em>)</span>:</p>
+<ul>
+<li>depth map, <span class="math inline"><em>d</em> : <em>Ω</em> → ℝ<sub>+</sub></span></li>
+<li>albedo image, <span class="math inline"><em>a</em> : <em>Ω</em> → ℝ<sup>3</sup></span></li>
+<li>global light direction, <span class="math inline"><em>l</em> ∈ 𝕊<sup>2</sup></span></li>
+<li>viewpoint, <span class="math inline"><em>w</em> ∈ ℝ<sup>6</sup></span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p>An image can be reconstructed from these factors:</p>
+<p><span class="math display">$$\hat{\mathbf{I}} = \Pi(\Lambda(a,d,l),d,w)$$</span></p>
+<p>where <span class="math inline"><em>Λ</em></span> computes lighting, and <span class="math inline"><em>Π</em></span> computes reprojection.</p>
+</section>
+<section id="probably-symmetric-objects" class="slide level2">
+<h2>Probably Symmetric Objects</h2>
+<p>Assume that depth and albedo are symmetric about a fixed vertical plane.</p>
+<p>Then, they require that:</p>
+<p><span class="math display"><em>d</em> ≈ flip(<em>d</em>′)</span></p>
+<p>and</p>
+<p><span class="math display"><em>a</em> ≈ flip(<em>a</em>′)</span></p>
+</section>
+<section class="slide level2">
+
+<p>In practice, these constraints are used in training by computing a second reconstructed image:</p>
+<p><span class="math display">$$\hat{\mathbf{I}}' = \Pi(\Lambda(a',d',l),d',w)$$</span></p>
+</section>
+<section class="slide level2">
+
+<p>The model is trained to encourage both <span class="math inline">$\mathbf{I} \approx \hat{\mathbf{I}}$</span> and <span class="math inline">$\mathbf{I} \approx \hat{\mathbf{I}}'$</span></p>
+</section>
+<section id="loss-function" class="slide level2">
+<h2>Loss Function</h2>
+<figure>
+<img data-src="assets/loss.png" alt="overview" /><figcaption aria-hidden="true">overview</figcaption>
+</figure>
+<p>The same loss is calculated for the symmetric reconstruction, <span class="math inline">$\mathcal{L}(\hat{\mathbf{I}}', \mathbf{I}, \sigma')$</span>.</p>
+</section>
+<section id="loss-function-1" class="slide level2">
+<h2>Loss Function</h2>
+<figure>
+<img data-src="assets/fullloss.png" alt="overview" /><figcaption aria-hidden="true">overview</figcaption>
+</figure>
+</section>
+<section id="image-formation" class="slide level2">
+<h2>Image Formation</h2>
+<p>Nothing unusual.</p>
+<ul>
+<li>Perspective camera with assumed narrow field of view</li>
+<li>Viewpoint represents a rotation and translation along <span class="math inline"><em>x</em>, <em>y</em>, <em>z</em></span></li>
+<li>Normals are computed, multiplied by light direction and added to ambient illumination.</li>
+<li>Above is multiplied by albedo to get illuminated texture.</li>
+<li>Light is represented as a spherical sector</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h4 id="implementation">Implementation</h4>
+<ul>
+<li>Depth and albedo are generated by (separate) encoder-decoder networks
+<ul>
+<li>encoder-decoders do not use skip connections because input and output images are not spatially aligned (since the output is in the canonical viewpoint)</li>
+</ul></li>
+<li>Viewpoint and lighting are regressed using simple encoder networks</li>
+<li>Trained using Adam, 50k iterations</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="assets/overview.png" alt="overview" /><figcaption aria-hidden="true">overview</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+</section>
+<section>
+<section id="experiments" class="title-slide slide level1">
+<h1>Experiments</h1>
+
+</section>
+<section class="slide level2">
+
+<h4 id="data">Data</h4>
+<ul>
+<li>Human face datasets
+<ul>
+<li>CelebA, 3DFAW and BFM</li>
+</ul></li>
+<li>Cats
+<ul>
+<li>Combine two datasets, one with 10k examples and another with 1.2k</li>
+</ul></li>
+<li>Cars
+<ul>
+<li>Synthetic cars rendered from ShapeNet</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h4 id="results">Results</h4>
+<p><img data-src="assets/results.png" alt="results" /><!-- .element height="50%" width="50%" --></p>
+<p>SIDE: Scale-invariant depth error</p>
+<p>MAD: Mean angle deviation (normals)</p>
+</section>
+<section class="slide level2">
+
+<h4 id="qualitative-results">Qualitative Results</h4>
+<p><img data-src="assets/qualitative1.png" alt="results" /><!-- .element height="70%" width="70%" --></p>
+</section>
+<section class="slide level2">
+
+<h4 id="qualitative-results-1">Qualitative Results</h4>
+<p><img data-src="assets/qualitative2.png" alt="results" /><!-- .element height="70%" width="70%" --></p>
+</section>
+<section class="slide level2">
+
+<h4 id="limitations">Limitations</h4>
+<p><img data-src="assets/limitations.png" alt="results" /><!-- .element height="70%" width="70%" --></p>
+<ul>
+<li>Fails under extreme lighting
+<ul>
+<li>assumes Lambertian shading model (ignores shadow and specularity)</li>
+</ul></li>
+<li>Fails with dark, noisy textures</li>
+<li>Fails with extreme angles</li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section id="questions" class="title-slide slide level1">
+<h1>Questions</h1>
+
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
