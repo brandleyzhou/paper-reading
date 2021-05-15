@@ -102,17 +102,15 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ---
 
-####  multi-view cost volume:
+####  multi-view cost volume
 
 
-![overview](assets/overview.png)<!-- .element height="70%" width="60%" -->
+![overview](assets/overview.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
 
 ####  <mark>Adaptive cost volumes </mark>
-
---
 
 
 
@@ -130,7 +128,8 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 #### <mark>Static cameras and start of sequences</mark>
 
 
-![overview](assets/table3.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/figure3.png)<!-- .element height="100%" width="100%" -->
+
 
 ---
 
@@ -146,8 +145,8 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 #### Dataset
 
-- CityScapes
 - KITTI
+- CityScapes
 
 
 ---
@@ -165,7 +164,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ### Efficiency comparison
 
-![results](assets/figure5.png)<!-- .element height="100%" width="100%" -->
+![results](assets/figure5.png)<!-- .element height="100%" width="60%" -->
 
 ---
 
@@ -184,7 +183,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 --
 
-![overview](assets/comparison.png)<!-- .element height="80%" width="80%" -->
+![overview](assets/comparison.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
