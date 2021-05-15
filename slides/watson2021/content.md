@@ -22,32 +22,22 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ---
 
-##  Motivation
+## Background
 
-- Depth Estimation
+- Self-supervised monocular depth estimation methods are trained using nearby frames as a supervision signal.
 
-- Combining all tasks into a single model reduces computation and allows these systems to run in real-time.
+- At test time, a trained network can output a depth map from a single RGB image.
 
 --
 
 - However:
 
-  * Performance is highly dependent on an appropriate choice of weighting between each task’s loss
+  * For some applications, sequence information is also available
 
-  * Tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice.
-  
-  * The optimal weighting of each task is dependent on the measurement scale (e.g. meters, centimetres or millimetres) and ultimately the magnitude of the task’s noise.
+  * The vast majority of monocular methods ingore this extra information.
 
----
+  * Or use test-time refinement techniques or recurrent networks.
 
-## Research Goals
-
----
-
-- A model trained under multi-task learning can outperform separate models trained individually on each task:
-  * Sematic Segmentation
-  * Instance Segmentation
-  * Depth Estimation
 
 ---
 
@@ -55,11 +45,10 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ---
 
-* A  multi-task loss to simultaneously learn various classification and regression losses of varying quantities and units using *homoscedastic* task uncertainty
+* A deep end-to-end cost volume based self-supervised approach
 
-* A unified architecture for semantic segmentation, instance segmentation and depth regression
+* A novel consistency loss that encourages the network to ignore the cost volume when it is deemed unreliable.
 
-* Demonstrating the importance of loss weighting in multi-task deep learning and how to obtain superior performance compared to equivalent separately trained models.
 
 ---
 
