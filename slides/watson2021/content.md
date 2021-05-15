@@ -45,10 +45,11 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ---
 
-* A deep end-to-end cost volume based self-supervised approach
+* A novel self-supervised multi-frame depth estimation model
 
-* A novel consistency loss that encourages the network to ignore the cost volume when it is deemed unreliable.
+* Showing moving objects and static scenes impact self-supervised multi-view matching approaches and introduce solutions
 
+* An adaptive cost volume to overcome the scale ambiguity 
 
 ---
 
