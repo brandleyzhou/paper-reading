@@ -55,80 +55,82 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ### Model Overview
 
-![overview](assets/network.png)<!-- .element height="100%" width="100%" -->
+![overview](assets/overview.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
 ## Related Work
 
-![overview](assets/ablation.png)<!-- .element height="80%" width="80%" -->
+* Monocular depth estimation
+
+* Multi-frames monocular depth estimation
+
+* Deep multi-view depth estimation
 
 ---
 
-## IDEA
-
-- Use homoscedastic uncertainty to weight the losses in a multi-task learning model
+![overview](assets/table1.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
-#### Multi Task Learning with Homoscedastic Uncertainty
+## Problem setup
 
-- Homoscedastic uncertainty
-- Multi-task likelihoods
 
----
+![overview](assets/eq1.png)<!-- .element height="70%" width="60%" -->
 
-#### Homoscedastic uncertainty
-
-- In Bayesian modelling
-  * *Epistemic Uncertainty*
-  * Aleatoric Uncertainty
-    * Data-dependent or  Heteroscedastic uncertainty
-    * <mark>Task-dependent or Homoscedastic uncertainty </mark> 
+![overview](assets/eq2.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
-- In a multi-task setting, the task uncertainty captures the relative confidence between tasks, reflecting the uncertainty inherent to the regression or classification task. 
+## Methods
+
+- self-supervised projection based training
+- Multi-view cost volume:
+- <mark>Adaptive cost volumes </mark>
+- <mark>Addressing cost volume overfitting</mark>
+- <mark>Static cameras and start of sequences</mark>
+
 
 ---
 
-#### Multi-task likelihoods 
+####  self-supervised projection based training
 
---
 
-- Definitions:
-  - For regression task, Likelihood as a Gaussian with mean given by the model output, and an observation noise scalar σ:  
-![overview](assets/eq2.png)<!-- .element height="65%" width="60%" -->
-
-  - For classification:  
 ![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
 
-  - Multi-task likelihood:  
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
-- Regression tasks' maximum likelihood inference
+####  multi-view cost volume:
 
-  - for Eq2, its written as  
-  ![overview](assets/eq5.png)<!-- .element height="60%" width="60%" -->
-  - for multi-output:  
-  ![overview](assets/eq6.png)<!-- .element height="60%" width="60%" -->
 
---
-
-  - Leading to the *minimisation* objective:  
-    ![overview](assets/eq7.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/overview.png)<!-- .element height="70%" width="60%" -->
 
 ---
 
-- Classification tasks' maximum likelihood inference
 
-  - with a positive scalar σ. (Boltzmann distribution)  
-![overview](assets/eq8.png)<!-- .element height="70%" width="60%" -->
+####  <mark>Adaptive cost volumes </mark>
 
-  - log likelihood  
-![overview](assets/eq9.png)<!-- .element height="25%" width="225%" -->
+--
+
+
+
+---
+
+#### <mark>Addressing cost volume overfitting</mark>
+
+![overview](assets/eq5.png)<!-- .element height="70%" width="60%" -->
+
+![overview](assets/eq6.png)<!-- .element height="60%" width="60%" -->
+
+---
+
+
+#### <mark>Static cameras and start of sequences</mark>
+
+
+![overview](assets/table3.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
@@ -137,11 +139,6 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ---
 
-## Scene Understanding Model
-
-![overview](assets/instance_seg.png)<!-- .element height="10%" width="100%" -->
-
----
 
 ## Experiments
 
@@ -149,19 +146,37 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 #### Dataset
 
-- CItyScapes
+- CityScapes
+- KITTI
+
 
 ---
 
 ### Quantitive Comparison
 
-![results](assets/comparison.png)<!-- .element height="100%" width="100%" -->
+![results](assets/table2.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
+![results](assets/table3.png)<!-- .element height="100%" width="100%" -->
+
+
+---
+
+### Efficiency comparison
+
+![results](assets/figure5.png)<!-- .element height="100%" width="100%" -->
+
+---
+
+
 ### Ablation experiments
 
-![results](assets/comparison_1.png)<!-- .element height="100%" width="100%" -->
+![results](assets/table4.png)<!-- .element height="100%" width="100%" -->
+
+--
+
+![results](assets/table5.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
@@ -169,17 +184,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 --
 
-![overview](assets/occlusion.png)<!-- .element height="80%" width="80%" -->
-
----
-
-![results](assets/results.png)<!-- .element height="90%" width="90%" -->
-
----
-
-### Robustness Test
-
-![results](assets/robustness.png)<!-- .element height="90%" width="90%" -->
+![overview](assets/comparison.png)<!-- .element height="80%" width="80%" -->
 
 ---
 
