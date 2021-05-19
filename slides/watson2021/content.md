@@ -24,6 +24,8 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ## Background
 
+- Structure from Motion (SfM)
+
 - Self-supervised monocular depth estimation methods are trained using nearby frames as a supervision signal.
 
 - At test time, a trained network can output a depth map from a single RGB image.
@@ -47,7 +49,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 * A novel self-supervised multi-frame depth estimation model
 
-* Showing moving objects and static scenes impact self-supervised multi-view matching approaches and introduce solutions
+* (For SfM) Showing moving objects and static scenes impact self-supervised multi-view matching approaches and introducing solutions
 
 * An adaptive cost volume to overcome the scale ambiguity 
 
@@ -69,6 +71,8 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ---
 
+## Comparison with other approaches 
+
 ![overview](assets/table1.png)<!-- .element height="80%" width="80%" -->
 
 ---
@@ -76,8 +80,10 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 ## Problem setup
 
 
+* Single-image depth estimation
 ![overview](assets/eq1.png)<!-- .element height="70%" width="60%" -->
 
+* Multi-frmae depth estimation
 ![overview](assets/eq2.png)<!-- .element height="60%" width="60%" -->
 
 ---
@@ -95,16 +101,17 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ####  self-supervised projection based training
 
-
+* Synthesized I_{t}: 
 ![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
 
+* Reconstruction Loss:
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
 
 ---
 
 ####  multi-view cost volume
 
-
+* A cost volume which measures the geometric compatibility at different depth values between pixels from frames.
 ![overview](assets/overview.png)<!-- .element height="100%" width="100%" -->
 
 ---
