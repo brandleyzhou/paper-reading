@@ -30,7 +30,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 - At test time, a trained network can output a depth map from a single RGB image.
 
---
+---
 
 - However:
 
@@ -101,7 +101,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ####  self-supervised projection based training
 
-* Synthesized I<sub>t<\sub>:
+* Synthesized I<sub>t</sub>:
 
 ![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
 
@@ -133,6 +133,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 * One assumption: world is static 
 
+---
 
 ####  <mark>Adaptive cost volumes </mark>
 
@@ -153,6 +154,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 
 ---
+
 ##### Soluitions
 
 * Using a seperate network to regularize
@@ -187,9 +189,9 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 
 
-#### Loss function
+%#### Loss function
 
-- ![overview](assets/eq10.png)<!-- .element height="100%" width="100%" -->
+%- ![overview](assets/eq10.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
