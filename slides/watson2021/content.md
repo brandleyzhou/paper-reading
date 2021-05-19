@@ -101,7 +101,8 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ####  self-supervised projection based training
 
-* Synthesized I_{t}: 
+* Synthesized I<sub>t<\sub>:
+
 ![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
 
 * Reconstruction Loss:
@@ -111,36 +112,83 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ####  multi-view cost volume
 
-* A cost volume which measures the geometric compatibility at different depth values between pixels from frames.
+* A cost volume which measures the geometric compatibility at different depth values between pixels from frames. 
+
 ![overview](assets/overview.png)<!-- .element height="100%" width="100%" -->
 
+
 ---
+
+#### How to build the cost volume
+
+* For pixel(i,j), what is the likelihood of the correct depth being d, for each d in P?
+
+
+
+---
+
+#### However
+
+* d<sub>max</sub> and d<sub>min</sub> are hyperparameters.
+
+* One assumption: world is static 
 
 
 ####  <mark>Adaptive cost volumes </mark>
 
+
+* d<sub>max</sub> and d<sub>min</sub> can be learned from D<sub>t</sub>.
 
 
 ---
 
 #### <mark>Addressing cost volume overfitting</mark>
 
+---
+
+##### Why failed?
+
+* untextured regions
+* Moiving objects (cars) 
+
+
+---
+##### Soluitions
+
+* Using a seperate network to regularize
+
 ![overview](assets/eq5.png)<!-- .element height="70%" width="60%" -->
+
+* Identifying unreliable pixels
 
 ![overview](assets/eq6.png)<!-- .element height="60%" width="60%" -->
 
+
+
 ---
 
+![overview](assets/figure3.png)<!-- .element height="100%" width="100%" -->
+
+---
 
 #### <mark>Static cameras and start of sequences</mark>
 
 
-![overview](assets/figure3.png)<!-- .element height="100%" width="100%" -->
+* Preceding frame does not exit
 
+    * When training, with a probability p, set the cost volume to zero.
+    * At testing, same processing
 
 ---
 
+* Camera does not move
+
+* With a probability q, replace I<sub>t-1</sub> with I<sub>t</sub> in a color augmented version
+
+
+
 #### Loss function
+
 - ![overview](assets/eq10.png)<!-- .element height="100%" width="100%" -->
 
 ---
@@ -148,7 +196,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ## Experiments
 
---
+---
 
 #### Dataset
 
@@ -171,6 +219,8 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ### Efficiency comparison
 
+* Mutiply-add computations(MACS)
+
 ![results](assets/figure5.png)<!-- .element height="100%" width="60%" -->
 
 ---
@@ -180,7 +230,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ![results](assets/table4.png)<!-- .element height="100%" width="100%" -->
 
---
+---
 
 ![results](assets/table5.png)<!-- .element height="100%" width="100%" -->
 
@@ -188,7 +238,7 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ### Qualitative Results
 
---
+---
 
 ![overview](assets/comparison.png)<!-- .element height="100%" width="100%" -->
 
