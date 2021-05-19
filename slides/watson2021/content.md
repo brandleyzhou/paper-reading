@@ -101,11 +101,13 @@ Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3
 
 ####  self-supervised projection based training
 
+
 * Synthesized I<sub>t</sub>:
 
 ![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
 
 * Reconstruction Loss:
+
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
 
 ---
