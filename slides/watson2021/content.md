@@ -5,11 +5,10 @@
 
 ---
 
-Jamie Watson<sup>1</sup>, Oisin Mac Aodha<sup>2</sup>, Victor Prisacariu<sup>1,3</sup>, Gabriel Brostow<sup>1,4</sup>, Michael Firman<sup>1</sup>
+Jamie Watson, Oisin Mac Aodha, Victor Prisacariu, Gabriel Brostow, Michael Firman
 
-<sup>1</sup> Niantic, <sup>2</sup> University of Edinburgh,
-
-<sup>3</sup> University of Oxford,<sup>4</sup> UCL
+Niantic, University of Edinburgh,
+University of Oxford, UCL
 
 ---
 
