@@ -56,7 +56,7 @@ University of Oxford, UCL
 
 ### Model Overview
 
-![overview](assets/depth.png)<!-- .element height="80%" width="100%" -->
+![overview](assets/depth.png)<!-- .element height="50%" width="100%" -->
 
 ---
 
@@ -102,7 +102,7 @@ University of Oxford, UCL
 
 
 * Synthesized I<sub>t</sub>:
-![overview](assets/eq3.png)<!-- .element height="55%" width="60%" -->
+![overview](assets/eq3.png)<!-- .element height="20%" width="60%" -->
 
 * Reconstruction Loss:
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
@@ -169,7 +169,7 @@ University of Oxford, UCL
 
 ##### Why failed?
 
-* untextured regions
+* Untextured regions
 * Moiving objects (cars) 
 
 
@@ -207,11 +207,6 @@ University of Oxford, UCL
 
 * With a probability q, replace I<sub>t-1</sub> with I<sub>t</sub> in a color augmented version
 
-
-
-%#### Loss function
-
-%- ![overview](assets/eq10.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
