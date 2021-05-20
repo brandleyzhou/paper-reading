@@ -50,13 +50,13 @@ University of Oxford, UCL
 
 * (For SfM) Showing moving objects and static scenes impact self-supervised multi-view matching approaches and introducing solutions
 
-* An adaptive cost volume to overcome the scale ambiguity 
+* An adaptive cost volume 
 
 ---
 
 ### Model Overview
 
-![overview](assets/overview.png)<!-- .element height="100%" width="100%" -->
+![overview](assets/depth.png)<!-- .element height="100%" width="100%" -->
 
 ---
 
@@ -102,7 +102,7 @@ University of Oxford, UCL
 
 
 * Synthesized I<sub>t</sub>:
-![overview](assets/eq3.png)<!-- .element height="70%" width="60%" -->
+![overview](assets/eq3.png)<!-- .element height="60%" width="60%" -->
 
 * Reconstruction Loss:
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
@@ -120,7 +120,22 @@ University of Oxford, UCL
 
 #### How to build the cost volume
 
-* For pixel(i,j), what is the likelihood of the correct depth being d, for each d in P?
+- A set Of ordered planes P:
+    * perpendicular to the optical axis of I<sub>t</sub>
+    * depths linearly spaced between d<sub>min</sub> and d<sub>max</sub>
+
+- Feeding each frame into feature extractor:
+    * I<sub>t</sub> &rarr; F<sub>t</sub>
+    * I<sub>t-1</sub> &rarr; F<sub>t-1</sub>
+
+- Using the hypothesised alternative depth d in P to warp feature maps F<sub>t-1</sub> to match F<sub>t</sub>:
+    * repeat for each candidate depth plane
+    * calculate the L1 distance between F<sub>t</sub> with warped features
+
+---
+
+- In term of statistics
+    * For pixel(i,j), what is the likelihood of the correct depth being d, for each d in P?
 
 
 
@@ -138,7 +153,7 @@ University of Oxford, UCL
 
 
 * d<sub>max</sub> and d<sub>min</sub> can be learned from D<sub>t</sub>.
-
+    - Compute the average max and min of D<sub>t</sub> over a batch
 
 ---
 
