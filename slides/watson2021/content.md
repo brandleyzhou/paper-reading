@@ -56,7 +56,7 @@ University of Oxford, UCL
 
 ### Model Overview
 
-![overview](assets/depth.png)<!-- .element height="100%" width="100%" -->
+![overview](assets/depth.png)<!-- .element height="80%" width="100%" -->
 
 ---
 
@@ -102,7 +102,7 @@ University of Oxford, UCL
 
 
 * Synthesized I<sub>t</sub>:
-![overview](assets/eq3.png)<!-- .element height="60%" width="60%" -->
+![overview](assets/eq3.png)<!-- .element height="55%" width="60%" -->
 
 * Reconstruction Loss:
 ![overview](assets/eq4.png)<!-- .element height="60%" width="60%" -->
@@ -127,6 +127,8 @@ University of Oxford, UCL
 - Feeding each frame into feature extractor:
     * I<sub>t</sub> &rarr; F<sub>t</sub>
     * I<sub>t-1</sub> &rarr; F<sub>t-1</sub>
+
+---
 
 - Using the hypothesised alternative depth d in P to warp feature maps F<sub>t-1</sub> to match F<sub>t</sub>:
     * repeat for each candidate depth plane
@@ -161,6 +163,10 @@ University of Oxford, UCL
 
 ---
 
+![overview](assets/figure3.png)<!-- .element height="100%" width="100%" -->
+
+---
+
 ##### Why failed?
 
 * untextured regions
@@ -192,7 +198,7 @@ University of Oxford, UCL
 
 * Preceding frame does not exit
 
-    * When training, with a probability p, set the cost volume to zero.
+    * When training, with a probability $ p $ , set the cost volume to zero.
     * At testing, same processing
 
 ---
