@@ -132,7 +132,7 @@ University of Oxford, UCL
 
 - Using the hypothesised alternative depth d in P to warp feature maps F<sub>t-1</sub> to match F<sub>t</sub>:
     * repeat for each candidate depth plane
-    * calculate the L1 distance between F<sub>t</sub> with warped features
+    * calculate the L1 distance between F<sub>t</sub> and warped features
 
 ---
 
